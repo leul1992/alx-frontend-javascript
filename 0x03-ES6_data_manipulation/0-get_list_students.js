@@ -1,13 +1,8 @@
 export default function getListStudents() {
-  const stud1 = {
-    id: 1,firstName:"Guillaume", location: "San Francisco"
-};
-  const stud2 = {
-    id: 2,firstName:"James", location: "Columbia"
-};
-  const stud3 = {
-    id: 5,firstName:"Serena", location: "San Francisco"
-};
-  const studArray = [stud1, stud2, stud3];
+  const studArray = [
+    { id: 1, firstName: 'Guillaume', location: 'San Francisco' },
+    { id: 2, firstName: 'James', location: 'Columbia' },
+    { id: 5, firstName: 'Serena', location: 'San Francisco' },
+  ];
   return studArray;
 }
