@@ -6,7 +6,7 @@ export default function getListStudents() {
     id: 2,firstName:"James", location: "Columbia"
 };
   const stud3 = {
-    id: 3,firstName:"Serena", location: "San Francisco"
+    id: 5,firstName:"Serena", location: "San Francisco"
 };
   const studArray = [stud1, stud2, stud3];
   return studArray;
