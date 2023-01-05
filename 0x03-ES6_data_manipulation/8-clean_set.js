@@ -4,19 +4,21 @@ export default function cleanSet(set, startString) {
   if (startString && typeof startString === 'string') {
     for (const stringSet of set) {
       flag = false;
-      for (let i = 0; i < startString.length; i += 1) {
-        if (startString[i] !== stringSet[i]) {
-          break;
+      if (stringSet) {
+        for (let i = 0; i < startString.length; i += 1) {
+          if (startString[i] !== stringSet[i]) {
+            break;
+          }
+          if (i === startString.length - 1) {
+            flag = true;
+          }
         }
-        if (i === startString.length - 1) {
-          flag = true;
+        if (str !== '' && flag !== false) {
+          str = str.concat('-');
         }
-      }
-      if (str !== '' && flag !== false) {
-        str = str.concat('-');
-      }
-      if (flag === true) {
-        str = str.concat(stringSet.substr(startString.length));
+        if (flag === true) {
+          str = str.concat(stringSet.substr(startString.length));
+        }
       }
     }
   }
